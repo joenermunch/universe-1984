@@ -1,0 +1,198 @@
+{
+  "id": "dool-1985-fig10",
+  "tier": "inferred",
+  "purpose": "Cast satisfying L85-TR Fig. 10 and p. 21: DAVID's wife's father ALEX is nasty enough (niceness < 0) to threaten him; RENEE has no nasty father-in-law; only STEPHANO qualifies as KILLER; RENEE seduces ROMAN.",
+  "verified_facts": [
+    "DAVID's wife's father is ALEX, niceness < 0 but not < -5 (L85-TR p. 21)",
+    "RENEE does not have a nasty father-in-law (p. 21)",
+    "WORRIER candidates: MARLENA JULIE DOUG ROMAN DON CHRIS KAYLA (Fig. 10)",
+    "KILLER: STEPHANO (Fig. 10)",
+    "RENEE seduces ROMAN (Fig. 10)"
+  ],
+  "inferred_facts": "PAULA (David's wife); trait values; ALEX niceness -3; DAPHNE and TONY omitted.",
+  "persons": [
+    {
+      "sym": "STEPHANO",
+      "first": "Stephano",
+      "surname": "Dimera",
+      "sex": "M",
+      "born": 1925,
+      "traits": {
+        "niceness": -8,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "MARLENA",
+      "first": "Marlena",
+      "surname": "Evans",
+      "sex": "F",
+      "born": 1950,
+      "stereotypes": [
+        "psychologist"
+      ],
+      "traits": {
+        "niceness": 6,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "JULIE",
+      "first": "Julie",
+      "surname": "Williams",
+      "sex": "F",
+      "born": 1948,
+      "traits": {
+        "niceness": 6,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "DOUG",
+      "first": "Doug",
+      "surname": "Williams",
+      "sex": "M",
+      "born": 1938,
+      "traits": {
+        "niceness": 5,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "ROMAN",
+      "first": "Roman",
+      "surname": "Brady",
+      "sex": "M",
+      "born": 1949,
+      "traits": {
+        "niceness": 5,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "DON",
+      "first": "Don",
+      "surname": "Craig",
+      "sex": "M",
+      "born": 1945,
+      "traits": {
+        "niceness": 4,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "CHRIS",
+      "first": "Chris",
+      "surname": "Kositchek",
+      "sex": "M",
+      "born": 1956,
+      "traits": {
+        "niceness": 4,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "KAYLA",
+      "first": "Kayla",
+      "surname": "Brady",
+      "sex": "F",
+      "born": 1958,
+      "stereotypes": [
+        "doctor",
+        "drunk"
+      ],
+      "traits": {
+        "niceness": 6,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "RENEE",
+      "first": "Renee",
+      "surname": "DuMonde",
+      "sex": "F",
+      "born": 1956,
+      "traits": {
+        "niceness": -6,
+        "promiscuity": 7
+      }
+    },
+    {
+      "sym": "ALEX",
+      "first": "Alex",
+      "surname": "Marshall",
+      "sex": "M",
+      "born": 1930,
+      "traits": {
+        "niceness": -3,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "DAVID",
+      "first": "David",
+      "surname": "Banning",
+      "sex": "M",
+      "born": 1955,
+      "traits": {
+        "niceness": 3,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "PAULA",
+      "first": "Paula",
+      "surname": "Marshall",
+      "sex": "F",
+      "born": 1956,
+      "traits": {
+        "niceness": 2,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "ELENA",
+      "first": "Elena",
+      "surname": "Marshall",
+      "sex": "F",
+      "born": 1932,
+      "died": 1975,
+      "traits": {
+        "niceness": 3
+      }
+    }
+  ],
+  "marriages": [
+    {
+      "husband": "ALEX",
+      "wife": "ELENA",
+      "start": 1954,
+      "end": 1975,
+      "endedBy": "death",
+      "children": [
+        "PAULA"
+      ]
+    },
+    {
+      "husband": "DAVID",
+      "wife": "PAULA",
+      "start": 1980
+    }
+  ],
+  "relationships": [
+    {
+      "a": "DAVID",
+      "b": "RENEE",
+      "values": {
+        "pos-neg": [
+          7,
+          8
+        ],
+        "attract": [
+          8,
+          8
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "character-jessica-donadio-1984",
+  "fidelity": "verified",
+  "kind": "program-output",
+  "version": "U84",
+  "source": {
+    "ref": "L84-TR",
+    "location": "Fig. 12, printed p. 25 (PDF p. 26); explanation pp. 24–26"
+  },
+  "scan_caveats": [
+    "Line-printer font renders N as a block glyph; names normalised (DONADIO, DAVIDSON, IVAN, RENE).",
+    "Digits 6 and 8 are hard to distinguish in this scan; every value is confirmed by the cleaner May 1983 printing (L83-TR Fig. 12) and the typeset journal version (Poetics 13, Fig. 3, p. 191).",
+    "Second reading (2026-11-08) resolved the 6/8 ambiguities; see second_reading."
+  ],
+  "transcription": [
+    "Name: JESSICA DONADIO (&PER7)",
+    "Born in: 1918",
+    "Marriages:",
+    "   DOUGLAS DAVIDSON [&PER0] [1951/1959]",
+    "      - - MARK DAVIDSON [&PER8]",
+    "      - - RENE DAVIDSON ROGERS [&PER9]",
+    "   IVAN SCHAAD [&PER14] [1959/1967]",
+    "Interpersonal Relationships:",
+    "   EX-SPOUSE     DOUGLAS DAVIDSON [&PER0]      -5/-5//4/4//0/0//4/4",
+    "   DIV-MOM       8/4//4/4//6/2// /              MARK DAVIDSON [&PER8]",
+    "   DIV-MOM       8/4//4/4//6/2// /              RENE DAVIDSON ROGERS [&PER9]",
+    "   EX-SPOUSE     IVAN SCHAAD [&PER14]           -5/-5//4/4//0/0//4/4",
+    "                 BRUCE SMITH [&PER45]            /-4// / //6/-4// /",
+    "History: REVENGE/1964 [&PL7]",
+    "Stereotypes: MASSEUSE PARTY-GOER EGOMANIAC",
+    "Trait modifiers:  (PHYS-APPEARANCE -1) (AGE A)",
+    "Overall description:",
+    "WEALTH            6",
+    "PROMISCUITY       7",
+    "COMPETENCE        7",
+    "NICENESS          0",
+    "SELF-CONFIDENCE   8",
+    "GUILE             7",
+    "MOODINESS         5",
+    "PHYS-APPEARANCE   5",
+    "INTELLIGENCE      4",
+    "GOALS             (BECOME-FAMOUS MEET-FAMOUS-PEOPLE ASSOCIATE-RIGHT FIND-HAPPINESS)",
+    "AGE               A",
+    "SEX               F"
+  ],
+  "structured": {
+    "id": "&PER7",
+    "name": "JESSICA DONADIO",
+    "born": {
+      "value": 1918,
+      "second_reading": "final digit matches the closed-top '8' of '&PER8' at 1000 dpi"
+    },
+    "sex": "F",
+    "age": "A",
+    "marriages": [
+      {
+        "spouse": "&PER0",
+        "spouse_name": "DOUGLAS DAVIDSON",
+        "years": [
+          1951,
+          1959
+        ],
+        "children": [
+          "&PER8",
+          "&PER9"
+        ],
+        "ended_by": "divorce",
+        "years_note": "Scan glyphs for 5/6/8 blur; 1951 is forced because the marriage ends in 1959 (start 1961 impossible)."
+      },
+      {
+        "spouse": "&PER14",
+        "spouse_name": "IVAN SCHAAD",
+        "years": [
+          1959,
+          1967
+        ],
+        "children": [],
+        "ended_by": "divorce",
+        "years_note": "1967, not 1987: the report is dated January 1984."
+      }
+    ],
+    "iprs": [
+      {
+        "type": "EX-SPOUSE",
+        "other": "&PER0",
+        "scales": {
+          "pos-neg": [
+            -5,
+            -5
+          ],
+          "int-dis": [
+            4,
+            4
+          ],
+          "dom-sub": [
+            0,
+            0
+          ],
+          "attract": [
+            4,
+            4
+          ]
+        },
+        "from": "stereotypical relationship 'ex-spouse'"
+      },
+      {
+        "type": "DIV-MOM",
+        "other": "&PER8",
+        "scales": {
+          "pos-neg": [
+            8,
+            4
+          ],
+          "int-dis": [
+            4,
+            4
+          ],
+          "dom-sub": [
+            6,
+            2
+          ],
+          "attract": [
+            null,
+            null
+          ]
+        },
+        "from": "stereotypical relationship 'divorced mother'"
+      },
+      {
+        "type": "DIV-MOM",
+        "other": "&PER9",
+        "scales": {
+          "pos-neg": [
+            8,
+            4
+          ],
+          "int-dis": [
+            4,
+            4
+          ],
+          "dom-sub": [
+            6,
+            2
+          ],
+          "attract": [
+            null,
+            null
+          ]
+        },
+        "from": "stereotypical relationship 'divorced mother'"
+      },
+      {
+        "type": null,
+        "other": "&PER45",
+        "other_name": "BRUCE SMITH",
+        "scales": {
+          "pos-neg": [
+            null,
+            -4
+          ],
+          "int-dis": [
+            null,
+            null
+          ],
+          "dom-sub": [
+            6,
+            -4
+          ],
+          "attract": [
+            null,
+            null
+          ]
+        },
+        "from": "historical event REVENGE/1964 [&PL7]"
+      }
+    ],
+    "history": [
+      {
+        "plot": "REVENGE",
+        "year": 1964,
+        "id": "&PL7"
+      }
+    ],
+    "stereotypes": [
+      "MASSEUSE",
+      "PARTY-GOER",
+      "EGOMANIAC"
+    ],
+    "trait_modifiers": {
+      "phys-appearance": -1,
+      "age": "A"
+    },
+    "overall": {
+      "wealth": {
+        "value": 6,
+        "second_reading": "open-top '6', same glyph as '6/2' and '1964'"
+      },
+      "promiscuity": 7,
+      "competence": 7,
+      "niceness": 0,
+      "self-confidence": {
+        "value": 8,
+        "second_reading": "closed-top '8'"
+      },
+      "guile": 7,
+      "moodiness": 5,
+      "phys-appearance": {
+        "value": 5,
+        "confirmed_by": "L83-TR Fig. 12 (May 1983 printing, PHYS-ATT 5) and Poetics 13 (1984) Fig. 3, p. 191 (PHYS-APPEARANCE 5)"
+      },
+      "intelligence": 4
+    },
+    "goals": [
+      "BECOME-FAMOUS",
+      "MEET-FAMOUS-PEOPLE",
+      "ASSOCIATE-RIGHT",
+      "FIND-HAPPINESS"
+    ]
+  },
+  "author_explanation": [
+    "Created when Douglas Davidson's life was cycled and a marriage decided; two children; divorced. Second marriage created when her own life was cycled; also ended in divorce (p. 24).",
+    "Masseuse and party-goer motivate promiscuity; egomaniac motivates guile; high phys-appearance comes from masseuse (p. 25).",
+    "Traits were 'selected somewhat arbitrarily in the computer run of the current version' (pp. 25–26).",
+    "Ex-spouse relation's -5 pos-neg comes from the ex-spouse stereotype (p. 26).",
+    "Bruce Smith: 'Jessica has negative feeling about Bruce, but he is in a position of power over her'; raw values because no stereotype describes them (p. 26)."
+  ],
+  "consistency_checks_for_tests": [
+    "Marriage 1 ends in the same year marriage 2 starts (1959).",
+    "Children appear under the marriage that produced them.",
+    "Each EX-SPOUSE IPR equals the ex-spouse stereotype defaults also seen in L85-TR Fig. 1 (Liz/Don).",
+    "Both DIV-MOM IPRs are identical (pure stereotype values).",
+    "The REVENGE history entry produces exactly one non-stereotypical IPR."
+  ],
+  "open_questions": [
+    "Q-IPR-1 (order of directional values)",
+    "Q-CHAR-1 (modifier vs overall semantics)"
+  ],
+  "second_reading": {
+    "date": "2026-11-08",
+    "method": "Re-read at 400–1000 dpi; ambiguous glyphs compared with glyphs of certain identity in the same figure; dates checked for internal consistency.",
+    "result": "All ambiguities in this fixture resolved."
+  }
+}

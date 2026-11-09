@@ -1,0 +1,92 @@
+{
+  "id": "forced-marriage",
+  "fidelity": "verified",
+  "sources": [
+    { "ref": "L85-CS", "location": "Fig. 1, p. 102", "note": "includes TIME SCALE; GOALS listed first" },
+    { "ref": "L85-TR", "location": "Fig. 2, p. 6", "note": "no TIME SCALE; GOALS after CONSTRAINTS; prints (do-divorce ?him ?her)" },
+    { "ref": "L85", "location": "Poetics 14 (1985), Table 2, p. 487", "note": "published version; prints (do-divorce ?husband ?her), agreeing with the trace (DO-DIVORCE TONY LIZ)" }
+  ],
+  "transcription_L85_TR": [
+    "PLOT FRAGMENT: forced-marriage",
+    "CHARACTERS: ?him ?her ?husband ?parent",
+    "CONSTRAINTS: (has-husband ?her)            {the husband character}",
+    "             (has-parent ?husband)         {the parent character}",
+    "             (< (trait-value ?parent 'niceness) -5)",
+    "             (female-adult ?her)",
+    "             (male-adult ?him)",
+    "GOALS: (churn ?him ?her)  {prevent them from being happy}",
+    "SUBGOALS: (do-threaten ?parent ?her \"forget it\") {threaten ?her}",
+    "          (dump-lover ?her ?him) {have ?her dump ?him}",
+    "          (worry-about ?him)      {have someone worry about ?him}",
+    "          (together * ?him)       {get ?him involved with someone else}",
+    "          (eliminate ?parent)     {get rid of ?parent (breaking threat)}",
+    "          (do-divorce ?him ?her) {end the unhappy marriage}",
+    "          (or (churn ?him ?her)      {either keep churning or}",
+    "              (together ?her ?him)) {try and get ?her and ?him back together}"
+  ],
+  "structured": {
+    "name": "forced-marriage",
+    "time_scale": { "value": "months", "source": "L85-CS only" },
+    "roles": ["?him", "?her", "?husband", "?parent"],
+    "role_stereotypes": {},
+    "constraints": [
+      ["has-husband", "?her"],
+      ["has-parent", "?husband"],
+      ["<", ["trait-value", "?parent", "niceness"], -5],
+      ["female-adult", "?her"],
+      ["male-adult", "?him"]
+    ],
+    "goals": [["churn", "?him", "?her"]],
+    "subgoals": [
+      ["do-threaten", "?parent", "?her", "forget it"],
+      ["dump-lover", "?her", "?him"],
+      ["worry-about", "?him"],
+      ["together", "*", "?him"],
+      ["eliminate", "?parent"],
+      [
+        "do-divorce",
+        "?husband",
+        "?her"
+      ],
+      ["or", ["churn", "?him", "?her"], ["together", "?her", "?him"]]
+    ],
+    "do_divorce_argument": {
+      "value": "?husband",
+      "fidelity": "verified",
+      "note": "Poetics 14 Table 2 (published) prints (do-divorce ?husband ?her); L85-TR Fig. 2 prints ?him, a typo in the report. Formerly deviation D-3."
+    },
+    "subgoal_order": {
+      "value": "total order as listed",
+      "fidelity": "inferred",
+      "note": "L85-TR p. 7: 'an ordered series of subgoals ... (actually, any partial ordering of the subgoals may be specified)'. L85-TR p. 19 says together-before-divorce is required for believability. The figure gives no explicit partial-order notation, and the Fig. 4 trace expands the subgoals in exactly the listed order."
+    },
+    "effects": {
+      "value": null,
+      "fidelity": "unknown",
+      "note": "L85-TR p. 7: effects on traits/IPRs 'mostly occurs in the subgoals' (e.g. the threat makes her dislike her father-in-law). Values not given."
+    },
+    "text": null
+  },
+  "generalized_constraints_forced_marriage0": {
+    "fidelity": "verified",
+    "source": { "ref": "L85-TR", "location": "Fig. 9, p. 21" },
+    "transcription": [
+      "CONSTRAINTS: (has-spouse ?her)   {instead of has-husband}",
+      "             (has-parent ?husband)",
+      "             (< (trait-val ?parent 'niceness) 0)",
+      "             (adult ?her)          {instead of female-adult}",
+      "             (adult ?him)          {instead of male-adult}"
+    ],
+    "constraints": [
+      ["has-spouse", "?her"],
+      ["has-parent", "?husband"],
+      ["<", ["trait-value", "?parent", "niceness"], 0],
+      ["adult", "?her"],
+      ["adult", "?him"]
+    ],
+    "notes": [
+      "Fig. 9 spells the accessor 'trait-val'; Fig. 2 spells it 'trait-value'. Treated as the same function.",
+      "Implemented by 'a simple UNIVERSE module to generalize constraints but without the analysis of the underlying causality' (L85-TR p. 21)."
+    ]
+  }
+}

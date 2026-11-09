@@ -1,0 +1,40 @@
+{
+  "id": "outline-1990-nadine-steven",
+  "fidelity": "verified",
+  "kind": "program-output (English outline, with author's parenthetical glosses)",
+  "version": "U87/U90",
+  "source": { "ref": "L90", "location": "Kurzweil 1990, essay by Lebowitz; KurzweilAI.net reprint art0304" },
+  "cast_generated_by_program": true,
+  "setting": "Nadine Burton is married to Teddy Bryks but is in love with Steven Kades. Gerald Bryks is Teddy's father, and none too nice a guy.",
+  "seed_goal": ["churn", "Nadine", "Steven"],
+  "outline": [
+    { "text": "Gerald Bryks threatens Nadine Burton Bryks: forget it", "gloss": "(her affair with Steven)" },
+    { "text": "Nadine Burton Bryks tells Steven Kades that she doesn't love him." },
+    { "text": "Norma Ryan Bryks is worried about Steven Kades." },
+    { "text": "Linda Einbinder Kimball seduces Steven Kades." },
+    { "text": "Joe Kimball decides to expose Gerald Bryks." },
+    { "text": "Joe Kimball tells the world about Gerald Bryks", "gloss": "(and his evil doings)" },
+    { "text": "Nadine Burton Bryks and Teddy Bryks get divorced." },
+    { "text": "Teddy Bryks tries to seduce Nadine Burton Bryks." },
+    { "text": "Steven Kades gets frustrated", "gloss": "(by this)" },
+    { "text": "Steven Kades tells Nadine Burton Bryks that he doesn't love her." },
+    { "text": "Nadine Burton Bryks seduces Steven Kades." }
+  ],
+  "inferred_mapping": {
+    "fidelity": "inferred",
+    "forced-marriage": {
+      "?her": "Nadine Burton Bryks", "?him": "Steven Kades", "?husband": "Teddy Bryks", "?parent": "Gerald Bryks",
+      "steps": {
+        "do-threaten": 1, "dump-lover": 2, "worry-about": 3, "together * ?him (SEDUCTION)": 4,
+        "eliminate ?parent (EXPOSE)": [5, 6], "do-divorce": 7, "or churn/together": "8–11"
+      }
+    },
+    "notes": [
+      "Same subgoal sequence as L85-TR Figs. 4–5; eliminate realised by EXPOSE (named but unused in the 1985 traces).",
+      "Linda Einbinder Kimball (seducer) and Joe Kimball (exposer) share a surname: probably married, a possible further instance of opportunistic or relationship-driven role filling (unverified).",
+      "Steps 8–11 are a churn continuation: 'Universe runs through a couple more of its library of ways to keep people apart.'",
+      "Event text is less terse than 1985 traces ('get divorced' vs 'got divorced'; 'tells … that she doesn't love him'): templates changed between versions or the author edited the text. UNRESOLVED."
+    ]
+  },
+  "print_check": "Checked against the printed book (Kurzweil 1990, p. 392, heading \"Churn Nadine and Steven\"): printed as one paragraph; wording matches."
+}

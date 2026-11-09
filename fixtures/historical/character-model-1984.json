@@ -1,0 +1,411 @@
+{
+  "id": "character-model-1984",
+  "fidelity": "verified",
+  "version": "U84",
+  "source": {
+    "ref": "L84-TR"
+  },
+  "person_frame_fields": {
+    "source": "Fig. 1, p. 12",
+    "fields": [
+      "Name",
+      "Stereotypes",
+      "Individual traits",
+      "Individual goals",
+      "Interpersonal relationships",
+      "Marriages",
+      "History (list of events)"
+    ]
+  },
+  "traits": {
+    "source": "Fig. 2, p. 14",
+    "items": [
+      {
+        "trait": "type",
+        "values": [
+          "occupation",
+          "job",
+          "group",
+          "avocation",
+          "habit",
+          "trait"
+        ],
+        "note": "a field of stereotype frames, not of persons"
+      },
+      {
+        "trait": "sex",
+        "values": [
+          "male",
+          "female"
+        ]
+      },
+      {
+        "trait": "age",
+        "values": [
+          "child",
+          "teen",
+          "young-adult",
+          "middle-aged",
+          "old"
+        ]
+      },
+      {
+        "trait": "phys-appearance",
+        "range": [
+          -10,
+          10
+        ]
+      },
+      {
+        "trait": "intelligence",
+        "range": [
+          0,
+          10
+        ]
+      },
+      {
+        "trait": "moodiness",
+        "range": [
+          0,
+          10
+        ]
+      },
+      {
+        "trait": "guile",
+        "range": [
+          -10,
+          10
+        ]
+      },
+      {
+        "trait": "self-confidence",
+        "range": [
+          -10,
+          10
+        ]
+      },
+      {
+        "trait": "niceness",
+        "range": [
+          -10,
+          10
+        ]
+      },
+      {
+        "trait": "competence",
+        "range": [
+          -10,
+          10
+        ]
+      },
+      {
+        "trait": "promiscuity",
+        "range": [
+          0,
+          10
+        ]
+      },
+      {
+        "trait": "wealth",
+        "range": [
+          0,
+          10
+        ]
+      },
+      {
+        "trait": "religion",
+        "values_examples": [
+          "Catholic",
+          "Jewish",
+          "etc."
+        ]
+      },
+      {
+        "trait": "race",
+        "values_examples": [
+          "black",
+          "white",
+          "etc."
+        ]
+      },
+      {
+        "trait": "nationality",
+        "values_examples": [
+          "Irish",
+          "Polish",
+          "etc."
+        ]
+      },
+      {
+        "trait": "social-background",
+        "values_examples": [
+          "preppie",
+          "the docks",
+          "etc."
+        ]
+      },
+      {
+        "trait": "time-used",
+        "values_examples": [
+          "days",
+          "nights",
+          "evening",
+          "weekends",
+          "etc."
+        ]
+      }
+    ],
+    "rule": "-10..10 for traits with positive and negative aspects; 0..10 for presence/absence traits (p. 13). 'Fine differences in numeric values are rarely significant' (p. 14)."
+  },
+  "trait_lists_other_versions": {
+    "U83": {
+      "source": "L83 Fig. 4",
+      "items": [
+        "sex",
+        "moodiness",
+        "wealth",
+        "religion",
+        "social-back",
+        "age",
+        "promiscuity",
+        "competence",
+        "race",
+        "time-used",
+        "phys-att",
+        "niceness",
+        "intelligence",
+        "nationality"
+      ]
+    },
+    "U85": {
+      "source": "L85-TR Fig. 1 (numeric part)",
+      "items": [
+        "wealth",
+        "promiscuity",
+        "competence",
+        "niceness",
+        "self-conf",
+        "guile",
+        "naivete",
+        "moodiness",
+        "phys-att",
+        "intelligence"
+      ]
+    },
+    "U90": {
+      "source": "L90 interactive transcript",
+      "items": [
+        "wealth",
+        "promiscuity",
+        "competence",
+        "niceness",
+        "self-confidence",
+        "guile",
+        "naivete",
+        "moodiness",
+        "physical attractiveness",
+        "intelligence"
+      ]
+    }
+  },
+  "age_codes_in_output": {
+    "U84": [
+      "A"
+    ],
+    "U85": [
+      "YA"
+    ],
+    "U90_prompt": [
+      "ya",
+      "ma",
+      "old"
+    ]
+  },
+  "stereotype_frames": {
+    "source": "Fig. 3, p. 15; digits confirmed in L83-TR Fig. 3, p. 8 (500 dpi) and Poetics 13 Table 3",
+    "frames": [
+      {
+        "name": "lawyer",
+        "type": "occupation",
+        "traits": {
+          "intelligence": 6,
+          "guile": 7,
+          "self-confidence": 6,
+          "niceness": 0,
+          "wealth": 6
+        },
+        "time-used": "days"
+      },
+      {
+        "name": "swinger",
+        "type": "trait",
+        "traits": {
+          "phys-appearance": 7,
+          "moodiness": 6,
+          "guile": 8,
+          "self-confidence": 6,
+          "competence": 6,
+          "promiscuity": 9
+        },
+        "time-used": "nights"
+      },
+      {
+        "name": "waiter",
+        "type": "job",
+        "traits": {
+          "niceness": 5,
+          "wealth": 2
+        },
+        "time-used": "evenings"
+      }
+    ],
+    "rule": "Where a stereotype has no value for a trait, it does not contribute to that trait (p. 14)."
+  },
+  "stereotype_names": {
+    "L84_fig4": [
+      "doctor",
+      "high-school-teacher",
+      "gangster",
+      "pro-athlete",
+      "life-guard",
+      "warden",
+      "klutz",
+      "preppie",
+      "socialite",
+      "party-goer",
+      "movie-fiend",
+      "big-eater",
+      "professor",
+      "actor",
+      "bureaucrat",
+      "receptionist",
+      "truck-driver",
+      "flake",
+      "swinger",
+      "flirt",
+      "hari-krishna",
+      "video-game-player",
+      "sports-fan",
+      "drunk",
+      "store-owner",
+      "gambler",
+      "politician",
+      "construction-worker",
+      "taxi-driver",
+      "nasty-person",
+      "family-man",
+      "New-Yorker",
+      "bowler",
+      "concert-goer",
+      "junkie"
+    ],
+    "L83_fig1_only": [],
+    "L83TR_fig4_only": {
+      "names": ["Californian"],
+      "source": "L83-TR (CUCS-055-83, May 1983) Fig. 4, p. 9: 36 names, the 35 of L84-TR Fig. 4 plus Californian (row 'preppie Californian New-Yorker'). Dropped from the January 1984 list and from Poetics 13 Table 4.",
+      "fidelity": "verified (name only)"
+    },
+    "seen_in_output_or_text": [
+      "lawyer",
+      "waiter",
+      "masseuse",
+      "egomaniac",
+      "knockout",
+      "psychologist",
+      "teacher",
+      "movie-freak",
+      "sleazy-doctor",
+      "sleazy-lawyer",
+      "taxidriver"
+    ],
+    "count_claimed": "over 50 (L83, L83-TR, L84-TR)"
+  },
+  "typical_goals_examples": {
+    "source": "p. 14",
+    "items": [
+      "doctors want to make money and establish lucrative practices",
+      "professional athletes want to become famous",
+      "everyone is trying to find happiness"
+    ]
+  },
+  "ipr": {
+    "source": "§4.3, pp. 16–18",
+    "scales": [
+      "pos-neg",
+      "int-dis",
+      "dom-sub",
+      "attract"
+    ],
+    "range": [
+      -10,
+      10
+    ],
+    "directional": true,
+    "stereotypical_relationships": [
+      {
+        "name": "doctor-patient",
+        "source": "Fig. 5",
+        "side_stereotypes": {
+          "doctor": [
+            "doctor",
+            "psychologist"
+          ],
+          "patient": []
+        },
+        "from_doctor": {
+          "pos-neg": 1,
+          "int-dis": 0,
+          "dom-sub": 6,
+          "attract": null
+        },
+        "from_patient": {
+          "pos-neg": 3,
+          "int-dis": 0,
+          "dom-sub": 2,
+          "attract": null
+        }
+      },
+      {
+        "name": "ex-spouse",
+        "source": "Fig. 6 parenthesised values + Fig. 12 + L85-TR Fig. 1",
+        "both_directions": {
+          "pos-neg": -5,
+          "int-dis": 4,
+          "dom-sub": 0,
+          "attract": 4
+        },
+        "fidelity_note": "pos-neg -5 confirmed by text (p. 26); others from output."
+      }
+    ],
+    "sample_relationship_fig6": {
+      "person1": "John Smith",
+      "person2": "Mary Jones",
+      "stereotype": "ex-spouse",
+      "from_person1": {
+        "pos-neg": 7,
+        "int-dis": "(4)",
+        "dom-sub": "(0)",
+        "attract": 9
+      },
+      "from_person2": {
+        "pos-neg": {
+          "value": -6,
+          "source": "Poetics 13 (1984) Table 6, p. 185, typeset: -6. Also -6 in L83-TR Fig. 6, p. 12. The L84-TR scan is unreadable here (digit cut by the column-header underline)."
+        },
+        "int-dis": "(4)",
+        "dom-sub": "(0)",
+        "attract": "(4)"
+      },
+      "note": "Parenthesised = inherited from the stereotypical relationship. 'the specific numbers should be taken with a grain of salt' (p. 17)."
+    }
+  },
+  "second_reading": {
+    "date": "2026-11-08",
+    "resolved": [
+      "doctor-patient dom-sub = 6",
+      "Fig. 6 Mary->John pos-neg = -6 (Poetics 13 Table 6, p. 185; L83-TR Fig. 6)",
+      "Fig. 3 lawyer intelligence/wealth and swinger moodiness/self-confidence/competence = 6 (L83-TR Fig. 3, p. 8, read at 500 dpi: open-top 6, distinct from the 8 of swinger guile)"
+    ],
+    "unresolved": []
+  }
+}

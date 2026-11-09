@@ -1,0 +1,182 @@
+{
+  "id": "universe-1987-joshua-fran",
+  "tier": "inferred",
+  "purpose": "Cast satisfying L87 Figs. 1-3: candidate set for CHURN JOSHUA FRAN, five fight subjects, two possible COLLEAGUEs incl. JACK, VALERIE reachable by ACCIDENT-BREAKUP.",
+  "verified_facts": [
+    "Fran: 25, nice, able, bureaucrat; Joshua: Fran's husband, sleazy New York lawyer, surprisingly nice; Valerie: not-so-nice sleazy lawyer; Louis: Valerie's preppie husband; Gerald: Joshua's father, nice, recently had an affair with Fran (L87 Fig. 1)",
+    "COLLEAGUE filled by JACK among several (Fig. 2)",
+    "Fight subjects IN-LAWS MONEY SECRETS FLIRTING KIDS (Fig. 2)"
+  ],
+  "inferred_facts": "All numeric values; Joshua's late mother; the couple's child; second colleague HOWARD; affair recorded as history entry.",
+  "persons": [
+    {
+      "sym": "FRAN",
+      "first": "Fran",
+      "surname": "Ryan",
+      "sex": "F",
+      "born": 1959,
+      "stereotypes": [
+        "bureaucrat"
+      ],
+      "traits": {
+        "niceness": 7,
+        "competence": 7,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "JOSHUA",
+      "first": "Joshua",
+      "surname": "Fischer",
+      "sex": "M",
+      "born": 1955,
+      "stereotypes": [
+        "sleazy-lawyer",
+        "New-Yorker"
+      ],
+      "traits": {
+        "niceness": 4,
+        "promiscuity": 5
+      }
+    },
+    {
+      "sym": "VALERIE",
+      "first": "Valerie",
+      "surname": "Hayes",
+      "sex": "F",
+      "born": 1957,
+      "stereotypes": [
+        "sleazy-lawyer"
+      ],
+      "traits": {
+        "niceness": -2,
+        "promiscuity": 6
+      }
+    },
+    {
+      "sym": "LOUIS",
+      "first": "Louis",
+      "surname": "Hayes",
+      "sex": "M",
+      "born": 1954,
+      "stereotypes": [
+        "preppie"
+      ],
+      "traits": {
+        "niceness": 2,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "GERALD",
+      "first": "Gerald",
+      "surname": "Fischer",
+      "sex": "M",
+      "born": 1928,
+      "traits": {
+        "niceness": 5,
+        "promiscuity": 5
+      }
+    },
+    {
+      "sym": "EDITH",
+      "first": "Edith",
+      "surname": "Fischer",
+      "sex": "F",
+      "born": 1930,
+      "died": 1979,
+      "traits": {
+        "niceness": 5
+      }
+    },
+    {
+      "sym": "BEN",
+      "first": "Ben",
+      "surname": "Fischer",
+      "sex": "M",
+      "born": 1981,
+      "traits": {
+        "niceness": 5
+      }
+    },
+    {
+      "sym": "JACK",
+      "first": "Jack",
+      "surname": "Nolan",
+      "sex": "M",
+      "born": 1952,
+      "stereotypes": [
+        "bureaucrat"
+      ],
+      "traits": {
+        "niceness": 3,
+        "promiscuity": 4
+      }
+    },
+    {
+      "sym": "HOWARD",
+      "first": "Howard",
+      "surname": "Quinn",
+      "sex": "M",
+      "born": 1949,
+      "stereotypes": [
+        "bureaucrat"
+      ],
+      "traits": {
+        "niceness": 3,
+        "promiscuity": 3
+      }
+    }
+  ],
+  "marriages": [
+    {
+      "husband": "GERALD",
+      "wife": "EDITH",
+      "start": 1953,
+      "end": 1979,
+      "endedBy": "death",
+      "children": [
+        "JOSHUA"
+      ]
+    },
+    {
+      "husband": "JOSHUA",
+      "wife": "FRAN",
+      "start": 1980,
+      "children": [
+        "BEN"
+      ]
+    },
+    {
+      "husband": "LOUIS",
+      "wife": "VALERIE",
+      "start": 1982
+    }
+  ],
+  "relationships": [
+    {
+      "a": "JOSHUA",
+      "b": "FRAN",
+      "values": {
+        "pos-neg": [
+          7,
+          7
+        ],
+        "attract": [
+          7,
+          7
+        ]
+      }
+    }
+  ],
+  "history": [
+    {
+      "plot": "AFFAIR",
+      "year": 1984,
+      "persons": [
+        "FRAN",
+        "GERALD"
+      ]
+    }
+  ]
+}

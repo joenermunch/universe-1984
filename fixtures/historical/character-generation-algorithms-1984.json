@@ -1,0 +1,40 @@
+{
+  "id": "character-generation-algorithms-1984",
+  "fidelity": "verified",
+  "version": "U84",
+  "source": { "ref": "L84-TR", "location": "Figs. 8–9, printed p. 21 (page printed upside down in the scan); §4.2 pp. 15–16; §5 pp. 19–22" },
+  "life_cycle_fig8": [
+    "initialize 'fill queue' to patriarchs",
+    "if queue is empty, -> stop",
+    "take next person from queue   [Note: the marriage cycle adds characters to the fill queue]",
+    "if person has no birth year, pick one",
+    "set year to birth year",
+    "more events? -- no --> fill in details of person (then next person from queue)",
+    "  yes -> select next 'life' event",
+    "    person dies -> fill in details of person",
+    "    marriage -> cycle marriage --> person died -> fill in details of person",
+    "                               --> set year to end of marriage -> more events?"
+  ],
+  "marriage_cycle_fig9": [
+    "Are there any 'eligible' spouses for the person getting married?",
+    "  yes -> Pick one of them as the spouse",
+    "  OR / no -> Create a spouse with a suitable birth year and add to fill queue",
+    "-> set year to marriage year",
+    "more events? -- no --> stop, return to 'life' cycle",
+    "  -> next 'marriage' event",
+    "    divorce, either spouse dies -> stop, return to 'life' cycle",
+    "    child -> create person with year as birth year and add to fill queue -> update year -> more events?"
+  ],
+  "eligible_spouse_definition": "someone who is single, of appropriate age and sex, and not directly related to the person in question (p. 20)",
+  "life_events_implemented_1984": ["death", "marriage"],
+  "marriage_events_implemented_1984": ["child", "divorce", "spouse dies"],
+  "create_to_specification": {
+    "source": "§4.2 pp. 15–16; demonstrated in L90 transcript",
+    "verbatim": "UNIVERSE does this by first selecting an occupation for the character that has the minimal total discrepancy from the traits specified. Then, for each trait specified but not yet perfectly described, another stereotype is picked that does not alter existing values, but brings the person closer to the desired value for the trait. This process tends to leave only minor variations to be accounted for by personal idiosyncrasy.",
+    "unknowns": ["discrepancy metric", "how unspecified occupation traits are scored", "tie-breaking", "how 'does not alter existing values' treats traits not yet set"]
+  },
+  "trait_inheritance": "The current version of UNIVERSE selects several personality traits from the person's parents (if known in the simulation), to be inherited (p. 22). Which traits and how many: unknown.",
+  "historical_plot_components_fig10": ["plot name", "time frame [e.g., days, months, years]", "role list [including prototypes specified for each role]", "constraints on role fillers", "how character traits should be modified", "how interpersonal relationships should be modified"],
+  "historical_plots_fig11": ["lawsuit", "consultant", "client-suicide", "big-loss", "famous-rider", "sports-scandal", "pig-out", "divorce", "abuse-charges", "confidante", "threatened", "break", "overdose", "feast", "illness", "robbery", "student-pass", "rackets", "takeover", "crime", "malpractice", "competition", "cutback", "bribe", "attempted-suicide", "diet"],
+  "historical_plots_seen_elsewhere": ["revenge (Jessica Donadio history)"]
+}

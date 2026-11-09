@@ -1,0 +1,58 @@
+{
+  "id": "trace-1985-fig5",
+  "title": "Same situation with extra goal (opportunistic filler choice)",
+  "fidelity": "verified",
+  "kind": "program-trace",
+  "version": "U85",
+  "source": { "ref": "L85-TR", "location": "Fig. 5, p. 11", "also": "L85-CS Fig. 3 (same run, minor typographic differences)" },
+  "input": "*(tell '(((churn liz neil) (together renee neil))))",
+  "seed_goals": [["churn", "liz", "neil"], ["together", "renee", "neil"]],
+  "lines": [
+    { "type": "goal", "raw": "working on goal -- (CHURN LIZ NEIL)" },
+    { "type": "candidates", "raw": "Several plans to choose from FORCED-MARRIAGE LOVERS-FIGHT JOB-PROBLEM" },
+    { "type": "plan", "raw": "-- using plan FORCED-MARRIAGE" },
+    { "type": "goal", "raw": "working on goal -- (DO-THREATEN STEPHANO LIZ \"forget it\")" },
+    { "type": "plan", "raw": "-- using plan THREATEN" },
+    { "type": "output", "raw": ">>> STEPHANO threatens LIZ: \"forget it\"" },
+    { "type": "goal", "raw": "working on goal -- (DUMP-LOVER LIZ NEIL)" },
+    { "type": "plan", "raw": "using plan BREAK-UP" },
+    { "type": "output", "raw": ">>> LIZ tells NEIL she doesn't love him" },
+    { "type": "goal", "raw": "working on goal -- (WORRY-ABOUT NEIL) -- using plan BE-CONCERNED" },
+    { "type": "fillers", "raw": "Possible candidates -- MARLENA JULIE DOUG ROMAN DON CHRIS KAYLA" },
+    { "type": "filler", "raw": "Using MARLENA for WORRIER" },
+    { "type": "output", "raw": ">>> MARLENA is worried about NEIL" },
+    { "type": "goal", "raw": "working on goal -- (TOGETHER * NEIL)" },
+    { "type": "candidates", "raw": "Several plans to choose from SEDUCTION DRUNKEN-SNEAK-IN SYMPATHETIC-UNION JOB-TOGETHER" },
+    { "type": "fillers", "raw": "Possible candidates -- DAPHNE RENEE" },
+    { "type": "filler", "raw": "Using RENEE for SEDUCER" },
+    { "type": "output", "raw": ">>> RENEE seduces NEIL" },
+    { "type": "goal", "raw": "working on goal -- (ELIMINATE STEPHANO)" },
+    { "type": "candidates", "raw": "Several plans to choose from ATTEMPTED-MURDER EXPOSE" },
+    { "type": "plan", "raw": "-- using plan ATTEMPTED-MURDER" },
+    { "type": "filler", "raw": "Using ALEX for KILLER" },
+    { "type": "output", "raw": ">>> ALEX tries to kill STEPHANO" },
+    { "type": "goal", "raw": "working on goal -- (DO-DIVORCE TONY LIZ) -- using plan DIVORCE" },
+    { "type": "output", "raw": ">>> LIZ and TONY got divorced" },
+    { "type": "goal", "raw": "working on goal -- (TOGETHER LIZ NEIL)" },
+    { "type": "fail", "raw": "no acceptable plans" }
+  ],
+  "outline": [
+    "STEPHANO threatens LIZ: \"forget it\"",
+    "LIZ tells NEIL she doesn't love him",
+    "MARLENA is worried about NEIL",
+    "RENEE seduces NEIL",
+    "ALEX tries to kill STEPHANO",
+    "LIZ and TONY got divorced"
+  ],
+  "behaviours_demonstrated": [
+    { "id": "opportunistic-filler", "text": "RENEE is chosen as SEDUCER because the seduction then also satisfies the pending goal (together renee neil).", "source": "L85-TR p. 10" },
+    { "id": "used-character-exclusion", "text": "RENEE, used in the seduction, is not offered for KILLER; ALEX is used (no 'Possible candidates' line printed).", "source": "L85-TR p. 10: 'Renee cannot take part in the attempted-murder plot fragment, as she was involved in the earlier seduction.'" },
+    { "id": "goal-satisfied-as-side-effect", "text": "The second seed goal (together renee neil) is never 'worked on' explicitly, it was satisfied by the seduction.", "source": "trace" }
+  ],
+  "differences_from_fig4": [
+    "Seed churn arguments reversed: (churn liz neil) here vs (churn neil liz) in Fig. 4; trace bindings are identical, so churn appears symmetric in this fragment's matching.",
+    "No '-- using plan SEDUCTION' line before the candidate list.",
+    "Fig. 4 prints 'Possible candidates -- RENEE ALEX' for KILLER; Fig. 5 prints none (single candidate after exclusion?)."
+  ],
+  "published_version": "Poetics 14 (1985) Table 5, p. 491: the same trace; the BREAK-UP plan name is printed \"BREAK UP\"."
+}

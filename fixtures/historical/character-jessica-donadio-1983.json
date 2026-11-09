@@ -1,0 +1,48 @@
+{
+  "id": "character-jessica-donadio-1983",
+  "fidelity": "verified",
+  "kind": "program-output",
+  "version": "U83",
+  "source": {
+    "ref": "L83-TR",
+    "location": "Fig. 12, printed p. 18 (PDF p. 19); explanation pp. 17-18"
+  },
+  "notes": [
+    "Same generated character, ids, dates, IPR strings, stereotypes, goals and values as character-jessica-donadio-1984.json (L84-TR Fig. 12 and Poetics 13 Fig. 3).",
+    "Printed with shorter labels than the January 1984 version: 'IPRs:' for 'Interpersonal Relationships:', PHYS-ATT for PHYS-APPEARANCE, SELF-CONF for SELF-CONFIDENCE.",
+    "The run therefore dates from May 1983 or earlier; the January 1984 report reprints it.",
+    "The scan is clear: Born in 1918, WEALTH 6, SELF-CONF 8, PHYS-ATT 5."
+  ],
+  "transcription": [
+    "Name: JESSICA DONADIO (&PER7)",
+    "Born in: 1918",
+    "Marriages:",
+    "   DOUGLAS DAVIDSON [&PER0] [1951/1959]",
+    "      - - MARK DAVIDSON [&PER8]",
+    "      - - RENE DAVIDSON ROGERS [&PER9]",
+    "   IVAN SCHAAD [&PER14] [1959/1967]",
+    "IPRs:",
+    "   EX-SPOUSE     DOUGLAS DAVIDSON [&PER0]      -5/-5//4/4//0/0//4/4",
+    "   DIV-MOM       8/4//4/4//6/2// /              MARK DAVIDSON [&PER8]",
+    "   DIV-MOM       8/4//4/4//6/2// /              RENE DAVIDSON ROGERS [&PER9]",
+    "   EX-SPOUSE     IVAN SCHAAD [&PER14]           -5/-5//4/4//0/0//4/4",
+    "                 BRUCE SMITH [&PER45]            /-4// / //6/-4// /",
+    "History: REVENGE/1964 [&PL7]",
+    "Stereotypes: MASSEUSE PARTY-GOER EGOMANIAC",
+    "Trait modifiers:  (PHYS-ATT -1) (AGE A)",
+    "Overall description:",
+    "WEALTH            6",
+    "PROMISCUITY       7",
+    "COMPETENCE        7",
+    "NICENESS          0",
+    "SELF-CONF         8",
+    "GUILE             7",
+    "MOODINESS         5",
+    "PHYS-ATT          5",
+    "INTELLIGENCE      4",
+    "GOALS             (BECOME-FAMOUS MEET-FAMOUS-PEOPLE ASSOCIATE-RIGHT FIND-HAPPINESS)",
+    "AGE               A",
+    "SEX               F"
+  ],
+  "structured_ref": "character-jessica-donadio-1984.json#structured (identical values)"
+}

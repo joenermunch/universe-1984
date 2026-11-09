@@ -1,0 +1,61 @@
+{
+  "id": "character-liz-chandler-1985",
+  "fidelity": "verified",
+  "kind": "program-output",
+  "version": "U85",
+  "source": { "ref": "L85-TR", "location": "Fig. 1, p. 5", "note": "Character 'adapted from Days of Our Lives' (fn. 1), i.e. entered by hand, not generated. Printed by the program's frame display." },
+  "transcription": [
+    "Name: LIZ CHANDLER (LIZ)",
+    "Marriages:",
+    "   DON CRAIG [DON] [&MF1] [1980]",
+    "   TONY DIMERA [TONY] [&MF3]",
+    "IPRs:",
+    "   HUSBAND-WIFE    TONY DIMERA [TONY]     0/-8//8/8//6/-6//7/-3",
+    "   EX-SPOUSES      DON CRAIG [DON]        -5/-5//4/4//0/0//4/4",
+    "Stereotypes: ACTOR KNOCKOUT SOCIALITE PARTY-GOER",
+    "Trait modifiers: (SEX F) (AGE YA) (WEALTH 3) (PROMISCUITY -3)",
+    "                 (INTELLIGENCE 3)",
+    "Overall description:",
+    "WEALTH          8",
+    "PROMISCUITY     3",
+    "COMPETENCE      NIL",
+    "NICENESS        0",
+    "SELF-CONF       6",
+    "GUILE           7",
+    "NAIVETE         7",
+    "MOODINESS       6",
+    "PHYS-ATT        7",
+    "INTELLIGENCE    7",
+    "GOALS           (FIND-HAPPINESS BECOME-FAMOUS MEET-FAMOUS-PEOPLE)",
+    "AGE             YA",
+    "SEX             F"
+  ],
+  "structured": {
+    "name": "LIZ CHANDLER",
+    "symbol": "LIZ",
+    "marriages": [
+      { "id": "&MF1", "spouse": "DON", "years": [1980, null], "status": "ended (ex-spouses)" },
+      { "id": "&MF3", "spouse": "TONY", "years": [null, null], "status": "current" }
+    ],
+    "iprs": [
+      { "type": "HUSBAND-WIFE", "other": "TONY", "scales": { "pos-neg": [0, -8], "int-dis": [8, 8], "dom-sub": [6, -6], "attract": [7, -3] } },
+      { "type": "EX-SPOUSES", "other": "DON", "scales": { "pos-neg": [-5, -5], "int-dis": [4, 4], "dom-sub": [0, 0], "attract": [4, 4] } }
+    ],
+    "stereotypes": ["ACTOR", "KNOCKOUT", "SOCIALITE", "PARTY-GOER"],
+    "trait_modifiers": { "sex": "F", "age": "YA", "wealth": 3, "promiscuity": -3, "intelligence": 3 },
+    "overall": { "wealth": 8, "promiscuity": 3, "competence": null, "niceness": 0, "self-conf": 6, "guile": 7, "naivete": 7, "moodiness": 6, "phys-att": 7, "intelligence": 7 },
+    "goals": ["FIND-HAPPINESS", "BECOME-FAMOUS", "MEET-FAMOUS-PEOPLE"],
+    "age": "YA",
+    "sex": "F"
+  },
+  "author_explanation": [
+    "'Liz Chandler is basically a rich, intelligent socialite who is currently married to Tony Dimera, but hates him (the last point being recorded in the numbers following their interpersonal relationship)' (L85-TR pp. 4–5).",
+    "'The IPRs are broken into numeric scales that are not relevant here.'"
+  ],
+  "cross_version_notes": [
+    "EX-SPOUSES values identical to Jessica Donadio's EX-SPOUSE values (L84-TR Fig. 12): stable stereotype defaults across versions.",
+    "Label differs: EX-SPOUSE (1984) vs EX-SPOUSES (1985).",
+    "Trait names abbreviated: SELF-CONF, PHYS-ATT (vs SELF-CONFIDENCE, PHYS-APPEARANCE in 1984). NAIVETE is new.",
+    "Trait modifiers (WEALTH 3) vs overall (WEALTH 8): modifiers are probably deltas, not overrides (Q-CHAR-1)."
+  ]
+}

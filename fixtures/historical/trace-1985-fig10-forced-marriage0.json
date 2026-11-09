@@ -1,0 +1,40 @@
+{
+  "id": "trace-1985-fig10",
+  "title": "Using a plot fragment with generalized constraints",
+  "fidelity": "verified",
+  "kind": "program-trace",
+  "version": "U85",
+  "source": { "ref": "L85-TR", "location": "Fig. 10, p. 22" },
+  "input": "*(tell '(((churn david renee))))",
+  "seed_goals": [["churn", "david", "renee"]],
+  "known_facts_from_text": [
+    "DAVID is married; his wife's father ALEX is nasty enough (niceness < 0) to threaten DAVID (L85-TR p. 21).",
+    "RENEE does not have a nasty father-in-law, so the original forced-marriage does not apply."
+  ],
+  "lines": [
+    { "type": "goal", "raw": "working on goal -- (CHURN DAVID RENEE)" },
+    { "type": "plan", "raw": "-- using plan FORCED-MARRIAGE0 {FORCED-MARRIAGE with generalized constraints}" },
+    { "type": "goal", "raw": "working on goal -- (DO-THREATEN ALEX DAVID \"forget it\") -- using plan THREATEN" },
+    { "type": "output", "raw": ">>> ALEX threatens DAVID: \"forget it\"" },
+    { "type": "goal", "raw": "working on goal -- (DUMP-LOVER DAVID RENEE)" },
+    { "type": "plan", "raw": "using plan BREAK-UP" },
+    { "type": "output", "raw": ">>> DAVID tells RENEE he doesn't love her" },
+    { "type": "goal", "raw": "working on goal -- (WORRY-ABOUT RENEE) -- using plan BE-CONCERNED" },
+    { "type": "fillers", "raw": "Possible candidates -- MARLENA JULIE DOUG ROMAN DON CHRIS KAYLA" },
+    { "type": "filler", "raw": "Using MARLENA for WORRIER" },
+    { "type": "output", "raw": ">>> MARLENA is worried about RENEE" },
+    { "type": "goal", "raw": "working on goal -- (TOGETHER * RENEE)" },
+    { "type": "plan", "raw": "using plan SEDUCTION" },
+    { "type": "output", "raw": ">>> RENEE seduces ROMAN" },
+    { "type": "goal", "raw": "working on goal -- (ELIMINATE ALEX)" },
+    { "type": "candidates", "raw": "Several plans to choose from ATTEMPTED-MURDER EXPOSE" },
+    { "type": "filler", "raw": "Using STEPHANO for KILLER" },
+    { "type": "output", "raw": ">>> STEPHANO tries to kill ALEX" }
+  ],
+  "observations": [
+    "Role mapping after generalisation: ?her=DAVID (the married one), ?him=RENEE. The paper notes role names 'are now rather misleading'.",
+    "(TOGETHER * RENEE) is satisfied by 'RENEE seduces ROMAN', the churned lover is the seducer, unlike Figs. 4–5. Suggests SEDUCTION binds the wildcard role to the seduced party or that '*' can bind either role. UNRESOLVED (Q-PF-3).",
+    "Trace ends after ELIMINATE (no divorce, no final disjunction shown). Figure presumably truncated."
+  ],
+  "published_version": "Poetics 14 (1985) Table 10, p. 500: the same lines, with the DUMP-LOVER and SEDUCTION plan names on the goal line, and a final line \"...\" after \">>> STEPHANO tries to kill ALEX\": the published figure marks the trace as cut, not finished."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "trace-1987-fig3",
+  "title": "A multi-goal story",
+  "fidelity": "verified",
+  "kind": "program-trace",
+  "version": "U87",
+  "source": { "ref": "L87", "location": "Fig. 3, p. 239" },
+  "input": "*(tell '(((churn JOSHUA FRAN)) ((together JOSHUA VALERIE))))",
+  "seed_goals": [["churn", "JOSHUA", "FRAN"], ["together", "JOSHUA", "VALERIE"]],
+  "lines": [
+    { "type": "goal", "raw": "working on goal -- CHURN JOSHUA FRAN" },
+    { "type": "plan", "raw": "-- using plan ACCIDENT-BREAKUP P1/FRAN P2/JOSHUA THIRD-PARTY/VALERIE" },
+    { "type": "goal", "raw": "working on goal -- DO-DISABLE FRAN" },
+    { "type": "plan", "raw": "-- using plan DISABLE PERSON/FRAN" },
+    { "type": "output", "raw": ">>> FRAN has a spinal injury and is paralyzed" },
+    { "type": "output", "raw": ">>> FRAN doesn't want to ruin JOSHUA's life" },
+    { "type": "output", "raw": ">>> FRAN pretends to blame JOSHUA for her malady" },
+    { "type": "goal", "raw": "working on goal -- DUMP-LOVER FRAN JOSHUA" },
+    { "type": "plan", "raw": "-- using plan BREAK-UP DUMPER/FRAN DUMPED/JOSHUA" },
+    { "type": "output", "raw": ">>> FRAN tells JOSHUA she doesn't love him" },
+    { "type": "goal", "raw": "working on goal -- TOGETHER JOSHUA VALERIE" },
+    { "type": "editorial", "raw": "[again, the story continues unhappily for almost all concerned]" }
+  ],
+  "behaviours_demonstrated": [
+    { "id": "opportunistic-fragment", "text": "ACCIDENT-BREAKUP selected without a candidate list because it is 'the only one that guarantees that the man will get together with a desired person, given appropriate bindings' (L87 p. 238).", "source": "L87" },
+    { "id": "multi-line-text", "text": "Two '>>>' lines appear without their own goal lines, either DISABLE emits three lines, or ACCIDENT-BREAKUP itself emits the second and third. UNRESOLVED (Q-PF-4)." }
+  ],
+  "inferred_fragment_structure": {
+    "ACCIDENT-BREAKUP": {
+      "fidelity": "inferred",
+      "roles": ["P1", "P2", "THIRD-PARTY"],
+      "goals": [["churn", "?p2", "?p1"], ["together", "?p2", "?third-party"]],
+      "subgoals_observed": [["do-disable", "FRAN"], ["dump-lover", "FRAN", "JOSHUA"], ["together", "JOSHUA", "VALERIE"]]
+    }
+  }
+}

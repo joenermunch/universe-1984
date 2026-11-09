@@ -1,0 +1,48 @@
+{
+  "id": "session-1990-interactive-character",
+  "fidelity": "verified",
+  "kind": "program-session (user input marked)",
+  "version": "U87/U90",
+  "source": { "ref": "L90", "location": "Kurzweil 1990, essay by Lebowitz; KurzweilAI.net reprint art0304", "note": "Italic text = user input, shown here as {input: ...}. Not yet compared with the printed book." },
+  "lines": [
+    { "prompt": "Enter sex (m/f):", "input": "m" },
+    { "prompt": "Enter name:", "input": "John Jones" },
+    { "prompt": "Enter age group (ya/ma/old):", "input": "ma" },
+    { "output": "Cycling person John Jones" },
+    { "prompt": "Enter year of next life event (cr = quit):", "input": "1970" },
+    { "prompt": "Next event (m/d):", "input": "m" },
+    { "prompt": "Try to find spouse in universe (u/n):", "input": "n" },
+    { "prompt": "Enter name (list):", "input": "" },
+    { "output": "Cycling marriage between John Jones and Kathy Cole" },
+    { "prompt": "Enter year of next marriage event (cr = quit):", "input": "" },
+    { "output": "Beginning finish up for John Jones" },
+    { "prompt": "Pick traits (p/r):", "input": "p" },
+    { "output": "Possible traits to set: wealth, promiscuity, competence, niceness, self-confidence, guile, naivete, moodiness, physical attractiveness, intelligence" },
+    { "prompt": "Enter trait and value (cr = quit):", "input": "niceness 3" },
+    { "prompt": "Enter trait and value (cr = quit):", "input": "self-confidence 4" },
+    { "prompt": "Enter trait and value (cr = quit):", "input": "intelligence 3" },
+    { "prompt": "Enter trait and value (cr = quit):", "input": "" },
+    { "output": "Optimal occupations are: sleazy-doctor" },
+    { "prompt": "Enter occupation:", "input": "" },
+    { "output": "Selecting: sleazy-doctor" },
+    { "output": "Trait (intelligence 3) already satisfied" },
+    { "output": "For trait (self-confidence 4)" },
+    { "prompt": "Choices (life-guard, swinger, big-eater):", "input": "swinger" },
+    { "output": "For trait (niceness 3)" },
+    { "prompt": "Choices (taxidriver):", "input": null, "note": "transcript ends here in the essay" }
+  ],
+  "author_explanation": [
+    "'if no answer is provided, the program will pick one'.",
+    "Life events concentrate on 'marriages, divorces, the births of children, and deaths'; 'Other parts of the program allow other sorts of history to be added.'",
+    "The user 'let the program pick her name (Kathy Cole)'.",
+    "Result: 'a swinging sleazy doctor and taxidriver'.",
+    "The essay glosses niceness 3 / self-confidence 4 / intelligence 3 as 'not very nice … moderately self-confident, and moderately intelligent' (see Q-CHAR-3)."
+  ],
+  "test_expectations": [
+    "A create-to-specification run with targets {niceness 3, self-confidence 4, intelligence 3} first picks one occupation by minimal discrepancy.",
+    "Traits already matched by the occupation are reported satisfied and skipped.",
+    "For each remaining trait, candidate stereotypes are those that do not alter already-set values and move the trait toward its target.",
+    "Exact candidate sets (sleazy-doctor; life-guard/swinger/big-eater; taxidriver) are reproducible ONLY with the original stereotype library, which is lost; the reconstruction can reproduce the procedure, not these lists."
+  ],
+  "print_check": "Checked against the printed book (Kurzweil 1990, p. 391): prompts, answers and italics (user input) match this transcription exactly."
+}

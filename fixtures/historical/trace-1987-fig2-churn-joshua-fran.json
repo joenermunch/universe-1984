@@ -1,0 +1,80 @@
+{
+  "id": "trace-1987-fig2",
+  "title": "The beginning of a UNIVERSE plot outline",
+  "fidelity": "verified",
+  "kind": "program-trace",
+  "version": "U87",
+  "source": { "ref": "L87", "location": "Fig. 2, p. 237", "note": "Transcribed from page image." },
+  "input": "*(tell '(((churn JOSHUA FRAN))))",
+  "seed_goals": [["churn", "JOSHUA", "FRAN"]],
+  "cast": {
+    "generated_by_universe": true,
+    "summaries_L87_fig1": {
+      "Fran": "a 25-year-old, nice, able, bureaucrat",
+      "Joshua": "Fran's husband, a sleazy New York lawyer who is surprisingly nice",
+      "Valerie": "another, not-so-nice, sleazy lawyer",
+      "Louis": "Valerie's preppie husband",
+      "Gerald": "Joshua's father, a nice fellow, who, nonetheless, recently had an affair with Fran"
+    }
+  },
+  "lines": [
+    { "type": "goal", "raw": "working on goal -- CHURN JOSHUA FRAN" },
+    { "type": "candidates-header", "raw": "Several possible plans with equal goal effect" },
+    { "type": "candidate", "raw": "LOVERS-FIGHT HIM/FRAN HER/JOSHUA" },
+    { "type": "candidate", "raw": "LOVERS-FIGHT HIM/JOSHUA HER/FRAN" },
+    { "type": "candidate", "raw": "JOB-PROBLEM P1/FRAN P2/JOSHUA JOB/BUREAUCRAT" },
+    { "type": "candidate", "raw": "JOB-PROBLEM P1/JOSHUA P2/FRAN JOB/SLEAZY-LAWYER" },
+    { "type": "candidate", "raw": "PREGNANT-AFFAIR WOMAN/FRAN HUSBAND/JOSHUA" },
+    { "type": "candidate", "raw": "ACCIDENT-BREAKUP P1/FRAN P2/JOSHUA" },
+    { "type": "candidate", "raw": "STEAL-CHILD HUSBAND/JOSHUA HER/FRAN" },
+    { "type": "candidate", "raw": "COLLEAGUE-AFFAIR WIFE/FRAN HUSBAND/JOSHUA" },
+    { "type": "candidate", "raw": "AVALANCHE-ACCIDENT HIM/FRAN HER/JOSHUA" },
+    { "type": "candidate", "raw": "AVALANCHE-ACCIDENT HIM/JOSHUA HER/FRAN" },
+    { "type": "pick", "raw": "-- picking one" },
+    { "type": "plan", "raw": "-- using plan LOVERS-FIGHT HIM/FRAN HER/JOSHUA" },
+    { "type": "goal", "raw": "working on goal -- DO-FIGHT JOSHUA FRAN" },
+    { "type": "candidates-header", "raw": "Several possible plans with equal goal effect" },
+    { "type": "candidate", "raw": "PERSONAL-FIGHT A/JOSHUA B/FRAN SUBJECT/IN-LAWS" },
+    { "type": "candidate", "raw": "PERSONAL-FIGHT A/JOSHUA B/FRAN SUBJECT/MONEY" },
+    { "type": "candidate", "raw": "PERSONAL-FIGHT A/JOSHUA B/FRAN SUBJECT/SECRETS" },
+    { "type": "candidate", "raw": "PERSONAL-FIGHT A/JOSHUA B/FRAN SUBJECT/FLIRTING" },
+    { "type": "candidate", "raw": "PERSONAL-FIGHT A/JOSHUA B/FRAN SUBJECT/KIDS" },
+    { "type": "pick", "raw": "-- picking one" },
+    { "type": "plan", "raw": "-- using plan PERSONAL-FIGHT A/JOSHUA B/FRAN SUBJECT/MONEY" },
+    { "type": "output", "raw": ">>> JOSHUA and FRAN fight about: MONEY" },
+    { "type": "goal", "raw": "working on goal -- DUMP-LOVER JOSHUA FRAN" },
+    { "type": "plan", "raw": "-- using plan BREAK-UP DUMPER/JOSHUA DUMPED/FRAN" },
+    { "type": "output", "raw": ">>> JOSHUA tells FRAN he doesn't love her" },
+    { "type": "goal", "raw": "working on goal -- CHURN FRAN JOSHUA" },
+    { "type": "candidates-header", "raw": "Several possible plans with equal goal effect" },
+    { "type": "candidate", "raw": "LOVERS-FIGHT HIM/JOSHUA HER/FRAN" },
+    { "type": "candidate", "raw": "JOB-PROBLEM P1/JOSHUA P2/FRAN JOB/SLEAZY-LAWYER" },
+    { "type": "candidate", "raw": "JOB-PROBLEM P1/FRAN P2/JOSHUA JOB/BUREAUCRAT" },
+    { "type": "candidate", "raw": "PREGNANT-AFFAIR WOMAN/FRAN HUSBAND/JOSHUA" },
+    { "type": "candidate", "raw": "ACCIDENT-BREAKUP P1/FRAN P2/JOSHUA" },
+    { "type": "candidate", "raw": "STEAL-CHILD HUSBAND/JOSHUA HER/FRAN" },
+    { "type": "candidate", "raw": "COLLEAGUE-AFFAIR WIFE/FRAN HUSBAND/JOSHUA" },
+    { "type": "candidate", "raw": "AVALANCHE-ACCIDENT HIM/JOSHUA HER/FRAN" },
+    { "type": "candidate", "raw": "AVALANCHE-ACCIDENT HIM/FRAN HER/JOSHUA" },
+    { "type": "pick", "raw": "-- picking one" },
+    { "type": "deferred", "raw": "Multiple deferred filler -- picking one" },
+    { "type": "plan", "raw": "-- using plan COLLEAGUE-AFFAIR WIFE/FRAN HUSBAND/JOSHUA COLLEAGUE/JACK" },
+    { "type": "editorial", "raw": "[and the story continues with the protagonists living unhappily ever after]" }
+  ],
+  "inferred_fragment_structure": {
+    "LOVERS-FIGHT": {
+      "fidelity": "inferred",
+      "roles": ["HIM", "HER"],
+      "goal": ["churn", "?him", "?her"],
+      "subgoals_observed": [["do-fight", "JOSHUA", "FRAN"], ["dump-lover", "JOSHUA", "FRAN"], ["churn", "FRAN", "JOSHUA"]],
+      "note": "Bound HIM=FRAN, HER=JOSHUA yet subgoals print JOSHUA first. Mapping of roles to subgoal arguments cannot be fixed from one run. Final subgoal churns further, as L87 p. 236 says most churn fragments do."
+    }
+  },
+  "observations": [
+    "Candidate list is printed after constraint filtering ('filtering out those with constraints that are not met', L87 p. 238).",
+    "Both bindings of genderless roles are listed (fn. 2).",
+    "JOB-PROBLEM binds JOB to the stereotype of the character with the problem (Fran: BUREAUCRAT; Joshua: SLEAZY-LAWYER).",
+    "Second candidate list is in a different order from the first, order is not stable across calls (hash/order of indexing?). Not reproducible exactly.",
+    "COLLEAGUE is a deferred role filled after selection with JACK (a character not in Fig. 1)."
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "id": "dool-1985-figs4-5",
+  "tier": "inferred",
+  "purpose": "Minimal cast satisfying every fact L85-TR states or shows for Figs. 4 and 5 (forced-marriage on Liz/Neil).",
+  "verified_facts": [
+    "LIZ is married to TONY; DON is her ex-husband (L85-TR Fig. 1)",
+    "TONY's father is STEPHANO, nasty enough for forced-marriage (L85-TR p. 6, STORY1)",
+    "LIZ and NEIL are in love (STORY1)",
+    "LIZ niceness 0, promiscuity 3 (L85-TR Fig. 1)",
+    "WORRIER candidates: MARLENA JULIE DOUG ROMAN DON CHRIS KAYLA (Fig. 4)",
+    "SEDUCER candidates: DAPHNE RENEE (Fig. 4)",
+    "KILLER candidates: RENEE ALEX (Fig. 4); only ALEX once RENEE is used (Fig. 5)",
+    "Plans for CHURN: FORCED-MARRIAGE LOVERS-FIGHT JOB-PROBLEM; for TOGETHER: SEDUCTION DRUNKEN-SNEAK-IN SYMPATHETIC-UNION JOB-TOGETHER; for ELIMINATE: ATTEMPTED-MURDER EXPOSE (Fig. 4)"
+  ],
+  "inferred_facts": "All trait values except Liz's; stereotypes (doctor for NEIL and KAYLA, drunk for KAYLA (L84-TR STORY1: Kayla gets drunk), psychologist for MARLENA); STEPHANO's late wife; birth years.",
+  "persons": [
+    {
+      "sym": "LIZ",
+      "first": "Liz",
+      "surname": "Chandler",
+      "sex": "F",
+      "born": 1955,
+      "traits": {
+        "niceness": 0,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "NEIL",
+      "first": "Neil",
+      "surname": "Curtis",
+      "sex": "M",
+      "born": 1950,
+      "stereotypes": [
+        "doctor"
+      ],
+      "traits": {
+        "niceness": 4,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "TONY",
+      "first": "Tony",
+      "surname": "Dimera",
+      "sex": "M",
+      "born": 1952,
+      "traits": {
+        "niceness": -2,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "STEPHANO",
+      "first": "Stephano",
+      "surname": "Dimera",
+      "sex": "M",
+      "born": 1925,
+      "traits": {
+        "niceness": -8,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "MARLENA",
+      "first": "Marlena",
+      "surname": "Evans",
+      "sex": "F",
+      "born": 1950,
+      "stereotypes": [
+        "psychologist"
+      ],
+      "traits": {
+        "niceness": 6,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "JULIE",
+      "first": "Julie",
+      "surname": "Williams",
+      "sex": "F",
+      "born": 1948,
+      "traits": {
+        "niceness": 6,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "DOUG",
+      "first": "Doug",
+      "surname": "Williams",
+      "sex": "M",
+      "born": 1938,
+      "traits": {
+        "niceness": 5,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "ROMAN",
+      "first": "Roman",
+      "surname": "Brady",
+      "sex": "M",
+      "born": 1949,
+      "traits": {
+        "niceness": 5,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "DON",
+      "first": "Don",
+      "surname": "Craig",
+      "sex": "M",
+      "born": 1945,
+      "traits": {
+        "niceness": 4,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "CHRIS",
+      "first": "Chris",
+      "surname": "Kositchek",
+      "sex": "M",
+      "born": 1956,
+      "traits": {
+        "niceness": 4,
+        "promiscuity": 3
+      }
+    },
+    {
+      "sym": "KAYLA",
+      "first": "Kayla",
+      "surname": "Brady",
+      "sex": "F",
+      "born": 1958,
+      "stereotypes": [
+        "doctor",
+        "drunk"
+      ],
+      "traits": {
+        "niceness": 6,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "DAPHNE",
+      "first": "Daphne",
+      "surname": "DiMera",
+      "sex": "F",
+      "born": 1953,
+      "traits": {
+        "niceness": -1,
+        "promiscuity": 7
+      }
+    },
+    {
+      "sym": "RENEE",
+      "first": "Renee",
+      "surname": "DuMonde",
+      "sex": "F",
+      "born": 1956,
+      "traits": {
+        "niceness": -6,
+        "promiscuity": 7
+      }
+    },
+    {
+      "sym": "ALEX",
+      "first": "Alex",
+      "surname": "Marshall",
+      "sex": "M",
+      "born": 1930,
+      "traits": {
+        "niceness": -4,
+        "promiscuity": 2
+      }
+    },
+    {
+      "sym": "ANNA",
+      "first": "Anna",
+      "surname": "Dimera",
+      "sex": "F",
+      "born": 1927,
+      "died": 1970,
+      "traits": {
+        "niceness": 3
+      }
+    }
+  ],
+  "marriages": [
+    {
+      "husband": "STEPHANO",
+      "wife": "ANNA",
+      "start": 1950,
+      "endedBy": "death",
+      "end": 1970,
+      "children": [
+        "TONY"
+      ]
+    },
+    {
+      "husband": "DON",
+      "wife": "LIZ",
+      "start": 1980,
+      "end": 1982,
+      "endedBy": "divorce"
+    },
+    {
+      "husband": "TONY",
+      "wife": "LIZ",
+      "start": 1983
+    }
+  ],
+  "relationships": [
+    {
+      "a": "LIZ",
+      "b": "NEIL",
+      "couple": true,
+      "values": {
+        "pos-neg": [
+          8,
+          8
+        ],
+        "attract": [
+          8,
+          8
+        ]
+      }
+    }
+  ]
+}
